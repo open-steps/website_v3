@@ -25,7 +25,7 @@ h1 {
 h2 {
   font-size: 20px;
   margin-top: 0px;
-  color: #000;
+  color: #666;
   font-weight: bold;
   /*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
 }
@@ -46,18 +46,26 @@ p {
   width: 100%;
 }
 #past {
-  background-size:100%;
   background: url(../res/complete_route.png);
-  /*background-repeat: repeat-x;*/
+  background-size:100%;  
+  background-repeat: no-repeat;
 }
 #past .intro{
   background: rgba(255, 255, 255, 0.8);
   margin-top: 10px;
   padding: 20px;
+  border-radius: 10px;
+}
+#past .logo img{
+  max-width: 500px;
 }
 #links {
+  border-top: 10px solid #fff;
   padding: 40px 20px;
   background-color: #eee;
+}
+#links .links{
+  margin-top: 20px;
 }
 #links a {
   color: #000;
@@ -143,9 +151,13 @@ section .row {
   font-size: inherit;
 }
 footer {
+  padding: 40px 20px;
   text-align: center;
   background-color: #3083c6;
   border-top: 10px solid #fff;
+}
+footer h2{
+  color: #fff;  
 }
 footer a {
   display: inline;
@@ -162,7 +174,8 @@ footer a:hover {
   border: 2px solid rgba(255, 255, 255, 0.8);
 }
 footer li {
-  float: left;
+  display: inline;
+  float: center;
   margin: 0px 10px 10px 0px;
 }
 footer::selection {
@@ -210,6 +223,8 @@ footer::-moz-selection {
 .profile-info img {
   margin-right: 10px;
   clear: both;
+  border-radius: 10px;
+  border: 4px solid #fff;
 }
 .profile-image {
   width: 100px;
