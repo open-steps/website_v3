@@ -238,3 +238,6 @@ footer::-moz-selection {
   -webkit-box-shadow: -3px 3px 20px 3px #333;
   box-shadow: -3px 3px 20px 3px #333;
 }
+.ecobytes{
+  width: 300px;
+}
