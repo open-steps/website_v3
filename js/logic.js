@@ -15,7 +15,7 @@ ga('send', 'pageview');
 
 (function($) {
 
-  $("#past").css("background-image", "url(res/bg" + getRandomInt(0, 6) + ".jpg)");
+  // $("#past").css("background-image", "url(res/bg" + getRandomInt(0, 6) + ".jpg)");
 
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;

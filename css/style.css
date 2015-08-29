@@ -46,9 +46,9 @@ p {
   width: 100%;
 }
 #past {
-  background: url(../res/complete_route.png);
+  /*background: url(../res/complete_route.png);
   background-size:100%;  
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 #past .intro{
   background: rgba(255, 255, 255, 0.8);
@@ -94,20 +94,11 @@ p {
 #present li:hover {
   border: 2px solid rgba(10, 141, 245, 0.8);
 }
-#present::selection {
-  background: #000;
-}
-#present::-moz-selection {
-  background: #000;
-}
 #friends {
   background-color: #fff;
 }
 #friends a {
   color: #333;
-}
-#friends::selection {
-  background: #0a8df5;
 }
 #friends::-moz-selection {
   background: #0a8df5;
@@ -150,16 +141,16 @@ section .row {
 .icon-block .material-icons {
   font-size: inherit;
 }
-footer {
-  padding: 40px 20px;
+#social {
+  padding: 20px 20px 10px 20px;
   text-align: center;
-  background-color: #3083c6;
+  /*background-color: #3083c6;*/
   border-top: 10px solid #fff;
 }
-footer h2{
+#social h2{
   color: #fff;  
 }
-footer a {
+#social a {
   display: inline;
   text-transform: none;
   color: #fff;
@@ -169,20 +160,29 @@ footer a {
   transition: all .4s;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
-footer a:hover {
+#social a:hover {
   color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.8);
 }
-footer li {
+#social li {
   display: inline;
   float: center;
   margin: 0px 10px 10px 0px;
 }
-footer::selection {
-  background: #3083c6;
+footer {
+  /*background: #184264;
+  border-top: 1px solid #fff;*/
+  width: 100%; 
 }
-footer::-moz-selection {
-  background: #3083c6;
+footer p{
+  color: #fff;
+  font-size: 12px;
+  margin: 10px 20px;
+}
+footer img {
+  position: relative;
+  top: 4px;
+  height: 20px;
 }
 @media only screen and (max-width: 992px) {
   #timeline {
@@ -237,7 +237,4 @@ footer::-moz-selection {
   -moz-box-shadow: -3px 3px 20px 3px #333;
   -webkit-box-shadow: -3px 3px 20px 3px #333;
   box-shadow: -3px 3px 20px 3px #333;
-}
-.ecobytes{
-  width: 300px;
 }
