@@ -13,10 +13,17 @@
 ga('create', 'UA-66821417-1', 'auto');
 ga('send', 'pageview');
 
+var currentBgImageIndex = 0;
+
 (function($) {
-
-  $("#past").css("background-image", "url(res/bg" + getRandomInt(0, 6) + ".jpg)");
-
+    
+  var changeBgImage = function(){
+    currentBgImageIndex = getRandomInt(0, 13);  
+    $("#past").backstretch("res/bg/bg"+currentBgImageIndex+".jpg"); 
+  }
+  
+  changeBgImage();  
+  
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
@@ -28,5 +35,9 @@ ga('send', 'pageview');
       ga('send', 'event', 'button', 'click', 'link buttons', linkLabels[i] );
     });    
   });
+  
+  // setInterval(function () {    
+  //   changeBgImage();
+  // }, 5000);
 
-})(jQuery); // end of jQuery name space
+})(jQuery);
