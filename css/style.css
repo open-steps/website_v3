@@ -35,7 +35,7 @@ a {
   transition: all .4s;
 }
 a:hover {
-  color: #000;
+  color: #246395;
 }
 p {
   font-size: 18px;
@@ -47,21 +47,30 @@ p {
 }
 #past {
   /*background: url(../res/complete_route.png);*/
-  background-size:100%;  
+  background-size: 100%;
   background-repeat: no-repeat;
   padding-top: 10px;
 }
+
 /*#past h2{
   color: #000;
 }*/
-#past .intro{
-  background: rgba(255, 255, 255, 0.9);
+
+#past .intro {
+  background: rgba(255, 255, 255, 0.8);
   margin-top: 10px;
   padding: 20px;
   border-radius: 10px;
   border: 4px solid #fff;
 }
-#past .logo img{
+#past .intro h1 {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #0a8df5;
+  font-size: 32px;
+  font-weight: bolder;
+  margin: 0px;
+}
+#past .logo img {
   max-width: 500px;
 }
 #links {
@@ -69,7 +78,7 @@ p {
   padding: 40px 20px;
   background-color: #eee;
 }
-#links .links{
+#links .links {
   margin-top: 20px;
 }
 #links a {
@@ -91,7 +100,7 @@ p {
   -webkit-transition: all .4s;
   transition: all .4s;
   border-radius: 4px;
-  border: 2px solid rgba(10, 141, 245, 0.3);
+  /*border: 2px solid rgba(10, 141, 245, 0.3);*/
 }
 #present li a {
   color: #333;
@@ -113,7 +122,7 @@ p {
   margin: 0px 10px 10px 0px;
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid rgba(10, 141, 245, 0.3);
+  border: 2px solid rgba(255, 255, 255, 1);
 }
 .friends-icons li:hover {
   border: 2px solid rgba(10, 141, 245, 0.8);
@@ -152,8 +161,8 @@ section .row {
   /*background-color: #3083c6;*/
   border-top: 10px solid #fff;
 }
-#social h2{
-  color: #fff;  
+#social h2 {
+  color: #fff;
 }
 #social a {
   display: inline;
@@ -177,9 +186,9 @@ section .row {
 footer {
   /*background: #184264;
   border-top: 1px solid #fff;*/
-  width: 100%; 
+  width: 100%;
 }
-footer p{
+footer p {
   color: #fff;
   font-size: 12px;
   margin: 10px 20px;
