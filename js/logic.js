@@ -19,7 +19,7 @@ var currentBgImageIndex = 0;
     
   var changeBgImage = function(){
     currentBgImageIndex = getRandomInt(0, 13);  
-    $("#past").backstretch("res/bg/bg"+currentBgImageIndex+".jpg"); 
+    $("#past").backstretch("res/bg/bg"+currentBgImageIndex+".jpgggg"); 
   }
   
   changeBgImage();  
